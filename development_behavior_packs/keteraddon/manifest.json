@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "...",
+      "name": "Keter Addons",
+      "uuid":"ade11699-214b-4571-9969-5f86e695390e",
+      "version": [1, 0, 0],
+      "min_engine_version": [1, 21, 0]
+    },
+    "modules":
+      [
+        {
+          "description": "...",
+            "type": "data",
+            "uuid": "eb399217-7eb0-4f07-b2a0-92eff1582e29",
+            "version": [1, 0, 0]
+        }
+      ]
+  }

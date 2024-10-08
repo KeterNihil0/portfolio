@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "keter resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+
+    "keteraddon:keter_icon": {"textures": "textures/items/keter_icon"}
+
+  }
+}

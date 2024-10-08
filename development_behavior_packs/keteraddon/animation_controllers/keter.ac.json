@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+
+		"controller.animation.keter": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/clear @s minecraft:diamond",
+						"/event entity @s reset",
+						"/tag @s remove keter",
+						"/effect @s clear",
+						"/gamerule sendcommandfeedback true"
+					],
+					"transitions": [
+						{"keter": "query.is_item_name_any('slot.armor.head', 0, 'keteraddon:keter_equip')"}
+					]
+				},
+				"keter": {
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+                        
+						"/clear @s minecraft:diamond",
+						"/give @s minecraft:diamond 1 0 { \"minecraft:item_lock\":{ \"mode\": \"lock_in_inventory\" }}",
+						"/replaceitem entity @s slot.armor.head 1 keteraddon:keter_equip 1 1 { \"minecraft:item_lock\":{ \"mode\": \"lock_in_slot\" }}",
+						"/tag @s add keter",
+						"/effect @s instant_health 4 10 true",
+						"/event entity @s keter"
+					],
+					"transitions": [
+						{"default": "!query.is_item_name_any('slot.armor.head', 0, 'keteraddon:keter_equip')"}
+					]
+				}
+
+			}
+		}
+
+	}
+}
+
