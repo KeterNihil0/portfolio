@@ -1,8 +1,0 @@
-{
-    "materials": {
-        "version": "1.0.0",
-        "keter:entity_emissive_alpha":{
-            "+defines": ["USE_ONLY_EMISSIVE"]
-        }
-    }
-}
